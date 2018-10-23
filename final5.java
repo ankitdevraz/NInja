@@ -20,3 +20,23 @@ public class Solution {
            if(arr[startIndx]==ele){
                int [] totalIndex= new int[returnofIndexes.length+1];
                totalIndex[0]=startIndx;
+
+       int[]  returnofIndexes = arrayIndex(arr,ele,startIndx+1);
+           if(arr[startIndx]==ele){
+               int [] totalIndex= new int[returnofIndexes.length+1];
+               totalIndex[0]=startIndx;
+
+
+           for (int i=0; i<returnofIndexes.length; i++) {
+               totalIndex[i+1]= returnofIndexes[i];
+           }
+           return totalIndex;
+
+           }
+           else{
+               return returnofIndexes;
+           }
+       }
+
+	
+}
