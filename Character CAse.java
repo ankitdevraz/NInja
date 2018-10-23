@@ -1,3 +1,8 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+
+
 public class Main {
 	
 	public static void main(String[] args)  throws IOException
@@ -12,3 +17,13 @@ public class Main {
      
       }else if(m>=97 && m<=123){
         System.out.println("0");
+	      
+	            
+      }else if(m>=33 && m<=57){
+        System.out.println("-1");
+      }
+      
+   
+
+	}
+}
